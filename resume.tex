@@ -1,0 +1,220 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {ANIRUDH S}}\\
+    \vspace*{2pt}
+    \ {Student}\\
+    \vspace*{2pt}
+    \href{mailto:anirudhsudheer@gmail.com}{anirudhsudheer@gmail.com} | \href{tel:+91 95391 02851}{+91 95391 02851} | Kozhikode,Kerala,India\\
+    \vspace*{2pt}
+    \textbf{\href{http://bit.ly/3Du0xXP}{Portfolio | }}\textbf{\href{https://github.com/SudoAnirudh}{GitHub | }}\textbf{\href{https://www.linkedin.com/in/sudoanirudh/}{Linkedin}}\\
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Ghss Naduvannur}\hfill Kozhikode,India\\
+Degree in Secondary School \hfill June 2019 - March 2020\\
+{\sl Percentage: 100}\%\\
+\vspace{2mm}
+      \textbf{Nhss Vakayad}\hfill Kozhikode,India\\
+Bio Science Pre-University \hfill June 2020 - March 2022\\
+{\sl Percentage: 85}\%\\
+\vspace{2mm}
+      \textbf{Srinivas Institute Of Technologu,Manglore,India}\hfill Manglore,India\\
+Artificial Intelligence And Machine Learning B.E \hfill September 2022 - 2026\\
+{\sl CGPA: 7.2}\\
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Experience}
+  \vspace{2mm}
+
+  \textbf{Cognify}\textbf{ | Python Developer} \hfill Manglore,India | March 2025 - April 2025\\
+  \textbf{ALTAIR}\textbf{ | Data Science Master Virtual Intership} \hfill Virtual | January 2025 - March 2025\\
+  \textbf{Google for Developers}\textbf{ | Android Developer Virtual Internship} \hfill Virtual | October 2024 - December 2024\\
+  \textbf{Google Cloud}\textbf{ | Gen AI Virtual Intership} \hfill Virtual | July 2024 - September 2024\\
+  \textbf{Paloalto}\textbf{ | Cybersecurity Virtual Intership} \hfill Virtual | April 2019 - June 2024\\
+  \textbf{Google for Developers}\textbf{ | AI-ML Virtual Intership} \hfill Virtual | January 2024 - March 2024\\
+  \textbf{Codec Technologies}\textbf{ | AI Intern} \hfill Mumbai,Maharashtra | April 2025 - May 2025\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Programming Languages: & Python, C Language, Java, Flutter \\
+  Libraries/Frameworks: & Django, NumPy, Pandas, Matplotlib, Seaborn, Flask, NLP \\
+  Tools / Platforms: & Git, Vs Code, Excel, Power BI, Tableau, Jupyter Notebook \\
+  Databases: & SQL, MongoDB \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{BlinkDetection}}\textbf{ | \href{https://github.com/SudoAnirudh/BlinkDetection}{Link}}\hfill{\sl Python, Computer Vision}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] In this repo is a Python project that detects blinks in real-time video using OpenCV and facial landmarks, providing live visual feedback and a blink counter.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Age\_Gender\_Detection}}\textbf{ | \href{https://github.com/SudoAnirudh/Age\_Gender\_Detection}{Link}}\hfill{\sl Python, Computer Vision}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] This project uses deep learning to classify age and gender from images, leveraging CNNs and OpenCV for accuracy.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Image-Enhancement-Toolkit}}\textbf{ | \href{https://github.com/SudoAnirudh/Image-Enhancement-Toolkit}{Link}}\hfill{\sl Python}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] It is a PyQt6 and OpenCV-based desktop application for basic image processing. It currently supports Gaussian blur with an interactive slider for adjustment.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Feature-Extraction}}\textbf{ | \href{https://github.com/SudoAnirudh/Feature-Extraction}{Link}}\hfill{\sl Jupyter Notebook, Python}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Extract and visualize features such as boundaries and patterns from aerial or satellite images
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Intrusion-Detection-System-Using-ML}}\textbf{ | \href{https://github.com/SudoAnirudh/Intrusion-Detection-System-Using-ML}{Link}}\hfill{\sl Jupyter Notebook, HTML, Python, CSS}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] Project uses machine learning with scikit-learn to detect network intrusions, featuring a Flask-based web interface for easy monitoring.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Customer\_Churn\_Prediction}}\textbf{ | \href{https://github.com/SudoAnirudh/Customer\_Churn\_Prediction}{Link}}\hfill{\sl Jupyter Notebook}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] The Customer Churn Prediction project uses machine learning to predict which customers are likely to leave a company, helping businesses take action to retain them.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Stock\_Price\_Predictor}}\textbf{ | \href{https://github.com/SudoAnirudh/Stock\_Price\_Predictor}{Link}}\hfill{\sl Python}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item[] This repo is a Python project that predicts stock prices using machine learning models like Random Forest and LSTM. It features a Streamlit web app for users to select stocks, set prediction periods, and view interactive charts of historical and forecasted prices.
+\end{itemize}
+          \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Certifications}
+      \vspace{2mm}
+      • Introduction to Generative AI - \textbf{\href{https://drive.google.com/file/d/1-QBRrn4wBdtTsZ36JYPnMillYUPRnk4Y/view}{Google Cloud}}\\
+\vspace*{1mm}
+      • Explore Machine Learning using Python - \textbf{\href{https://drive.google.com/file/d/1K0\_Yq8nf2tineJ3RUMciBk9FvN7ehiku/view}{Infosys Springboard}}\\
+\vspace*{1mm}
+      • Machine Learning for All - \textbf{\href{https://drive.google.com/file/d/1KEBBXfEaBQFvLKe0CUMnvwk2FSmSdrJk/view}{Coursera}}\\
+\vspace*{1mm}
+      • Artificial Intelligence - \textbf{\href{https://drive.google.com/file/d/1EpU7UyEBt2bx58jzWAg4dsaOttvLnWVb/view?usp=drive\_link}{Certiport,Pearson}}\\
+\vspace*{1mm}
+      \vspace{2mm}
+
+\header{Achievements}
+      \vspace{2mm}
+      • Participated In Ntional Level Hackthon\\
+\vspace*{1mm}
+      • Participated In Various IEEE Events\\
+\vspace*{1mm}
+
+    \ 
+    \end{document}
