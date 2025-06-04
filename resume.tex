@@ -9,6 +9,7 @@
 \usepackage{longtable}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{graphicx} % Add photo package
 \pagestyle{empty}
 \raggedright
 
@@ -32,10 +33,15 @@
 
 % Contact and summary
 
-\resumecontact{ANIRUDH S}{Kozhikode, Kerala, India}{\href{mailto:anirudhsudheer@gmail.com}{anirudhsudheer@gmail.com} $\vert$ +91 95391 02851 $\vert$ \href{https://github.com/SudoAnirudh}{GitHub} $\vert$ \href{https://www.linkedin.com/in/sudoanirudh/}{LinkedIn} $\vert$ \href{http://bit.ly/3Du0xXP}{Portfolio}}
-
+\begin{minipage}{0.22\textwidth}
+  \includegraphics[width=0.95\linewidth,keepaspectratio]{photo.jpg} % Place your photo as 'photo.jpg' in the same folder
+\end{minipage}
+\hfill
+\begin{minipage}{0.75\textwidth}
+  \resumecontact{ANIRUDH S}{Kozhikode, Kerala, India}{\href{mailto:anirudhsudheer@gmail.com}{anirudhsudheer@gmail.com} $\vert$ +91 95391 02851 $\vert$ \href{https://github.com/SudoAnirudh}{GitHub} $\vert$ \href{https://www.linkedin.com/in/sudoanirudh/}{LinkedIn} $\vert$ \href{http://bit.ly/3Du0xXP}{Portfolio}}
 \vspace{2pt}
-\noindent\textbf{Summary:} AI \& ML Engineering Student | Python \& C Developer | Code Addict \& AI Explorer | Building the Future with Innovation \& Emerging Tech. Dedicated to applying skills in real-world AI/ML projects and continuous learning.
+  \noindent\textbf{Summary:} AI \& ML Engineering Student | Python \& C Developer | Code Addict \& AI Explorer | Building the Future with Innovation \& Emerging Tech. Dedicated to applying skills in real-world AI/ML projects and continuous learning.
+\end{minipage}
 
 % Education
 \resumesection{Education}
